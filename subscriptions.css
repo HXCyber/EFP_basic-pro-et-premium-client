@@ -1,0 +1,101 @@
+
+/* 1. Reset global et Box-Sizing Recommandé */
+* {
+    box-sizing: border-box; /* Inclus le padding et les bordures dans la taille (Crucial !) */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 40px 10px;
+}
+
+/* 2. Le Grand Conteneur Violet */
+.pricing-container {
+    background-color: #800080; /* Violet foncé comme dans l'exemple */
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; /* Centre le grand bloc violet au milieu de l'écran */
+    padding: 60px 40px; /* Espace intérieur pour que les cartes ne touchent pas les bords */
+    text-align: center; /* Permet d'aligner les éléments inline-block au centre */
+}
+
+/* 3. La Structure d'une Carte (Gris foncé) */
+.card {
+    display: inline-block; /* Aligne les 3 cartes côte à côte tout en permettant d'avoir des tailles fixes */
+    width: 300px;
+    background-color: #3f424d; /* Gris foncé */
+    margin: 0 15px; /* Crée l'espace (marge extérieure) entre les 3 cartes */
+    border-radius: 12px; /* Arrondit les coins de la carte */
+    overflow: hidden; /* Empêche les en-têtes de dépasser des coins arrondis */
+    vertical-align: top; /* Aligne les cartes par le haut */
+}
+
+/* 4. Les En-têtes (Headers) - Communs */
+.card-header {
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase; /* Force les majuscules comme vu en cours */
+    letter-spacing: 1px;
+}
+
+/* Couleurs spécifiques des En-têtes */
+.header-basic { background-color: #0099ff; }   /* Bleu */
+.header-pro { background-color: #ef5350; }     /* Rouge/Rose */
+.header-premium { background-color: #ffca28; } /* Jaune/Orange */
+
+/* 5. Contenu Interne de la Carte */
+.card-body {
+    color: #b0b5bc; /* Couleur gris clair pour le texte secondaire */
+    font-size: 14px;
+}
+
+/* Section Prix */
+.price {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.price sup {
+    font-size: 20px;
+    vertical-align: super;
+}
+
+.price sub {
+    font-size: 20px;
+    vertical-align: sub;
+}
+
+.period {
+    font-size: 12px;
+    font-style: italic; /* Texte en italique */
+    padding-bottom: 25px;
+}
+
+/* Les Lignes de Fonctionnalités (Features) */
+.feature {
+    padding: 12px 0;
+    border-top: 1px solid #4f5361; /* Ligne de séparation fine entre chaque option */
+}
+
+/* Zone du bouton */
+.btn-box {
+    padding: 30px 0;
+    border-top: 1px solid #4f5361;
+}
+
+/* Le bouton "Add to cart" */
+.btn-cart {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
